@@ -93,9 +93,9 @@ while( i > 0 || j > 0 )
 }
 
 /* find and print the matching lines */
-var vertical = 1;
-var horizontal = 1;
-while (vertical < lines1.length && horizontal < lines2.length) {
+var vertical = 0;
+var horizontal = 0;
+while (vertical < lines1.length || horizontal < lines2.length) {
     var down = data[vertical+1][horizontal].best_align;
     var over = data[vertical][horizontal+1].best_align;
     var diagonal = data[vertical+1][horizontal+1].best_align;
