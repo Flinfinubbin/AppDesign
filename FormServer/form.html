@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Status Check</title>
+  </head>
+  <style type="text/css">
+    div {
+      margin-left:10px;
+      margin-bottom:20px;
+      margin-top:20px;
+    }
+    h1 {
+      color: rgb(30,120,130);
+    }
+    form {
+      margin-bottom:50px;
+    }
+  </style>
+  <body style="background:rgb(250,250,250)">
+    <h1>Status Check</h1>
+    <form action="/first_form" method="get">
+      <div>
+        <input type="text" name="mood" value="What's your mood?"></input>
+        <input type="range" name="number" min="10" max="100">On a scale of 1 
+          to 10, how sure are you of that?</input>
+      </div>
+      <div>
+        <input type="color" name="decoration">What color best describes your mother?</input>
+      </div>
+      <div>
+        <input type="submit"></input>
+      </div>
+    </form>
+    <form action="/second_form" method="get">
+      <div>
+        <h4>I'm Feeling...</h4>
+        <label><input type="checkbox" name="fat"></input>Fat?</label>
+        <label><input type="checkbox" name="sassy"></input>Sassy?</label>
+        <h4>I am the Queen of France.</h4>
+        <label><input type="radio" name="queen_yes"></input>Yes</label>
+        <label><input type="radio" name="queen_no"></input>No</label>
+      </div>
+      <div>
+        <input type="submit"></input>
+      </div>
+    </form>
+  </body>
+</html>
