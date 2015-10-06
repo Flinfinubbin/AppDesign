@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>Telluride Performances</head>
+  <body>
+    <form action="/get_performer_info" method="get">
+      <input type="text" name="perf_id" value="performer id"></input>
+      <input type="submit"></input>
+    </form>
+    <form action="/get_performances" method="get">
+    	<h3>Enter start time (24hr)</h3>
+    	<input type="text" name="time" value="Start time (hh:mm)" pattern="[0-2]{1}[0-9]{1}\:[0-9]{2}"></input>
+    	<input type="submit"></input>
+    </form>
+  </body>
+</html>
