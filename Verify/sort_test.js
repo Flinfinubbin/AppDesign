@@ -103,10 +103,8 @@ console.log( "... OK, passed 100 tests" );
     if not:
         return false
 */
-
-
 console.log( "Running the sort number of copies test:" );
-console.log( "Write a test that returns true if the number of copies of a particular value in the unsorted array is the same as the number of copies of that value in the sorted array." );
+//console.log( "Write a test that returns true if the number of copies of a particular value in the unsorted array is the same as the number of copies of that value in the sorted array." );
 var sortNumCopies =
     jsc.forall( "array string",
         function( arr )
